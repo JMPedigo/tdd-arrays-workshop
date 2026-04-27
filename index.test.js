@@ -94,7 +94,7 @@ describe("sharesFirstLetter", function () {
   });
 });
 
-describe.only("quintuple", function () {
+describe("quintuple", function () {
   it("returns a new array with each number multiplied by 5", function () {
     expect(quintuple([1, 2, 3])).toEqual([5, 10, 15]);
   });
@@ -133,7 +133,7 @@ describe("pluralize", function () {
   });
 });
 
-describe("countAttendance", function () {
+describe.only("countAttendance", function () {
   it("counts the number of true values", function () {
     expect(countAttendance([true, false, true])).toBe(2);
   });
