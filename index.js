@@ -69,6 +69,10 @@ export function getFirstLast(array) {
  */
 export function sharesFirstLetter(str1, str2) {
   // TODO
+  if (str1.length === 0 || str2.length === 0) {
+    return false;
+  }
+  return str1[0] === str2[0];
 }
 
 /**
