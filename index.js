@@ -190,8 +190,13 @@ export function getLongestWord(sentence) {
  */
 export function findSong(playlist, song) {
   // TODO
+  for (let i = 0; i < playlist.length; i++) {
+    if (playlist[i] === song) {
+      return i;
+    }
+  }
+  return -1;
 }
-
 /**
  * @param {string[][]} map - a 2D array in which each element is a string that
  *  represents something in the area, such as "tree", "pigeon", "lamp", or "guard"
