@@ -197,6 +197,7 @@ export function findSong(playlist, song) {
   }
   return -1;
 }
+
 /**
  * @param {string[][]} map - a 2D array in which each element is a string that
  *  represents something in the area, such as "tree", "pigeon", "lamp", or "guard"
@@ -212,4 +213,12 @@ export function findSong(playlist, song) {
  */
 export function findSpy(map) {
   // TODO
+  for (let x = 0; x < map.length; x++) {
+    for (let y = 0; y < map.length; y++) {
+      if (map[x][y] === "spy") {
+        return [x, y];
+      }
+    }
+  }
+  return null;
 }
